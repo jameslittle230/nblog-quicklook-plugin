@@ -48,6 +48,15 @@
          runnableDebuggingMode = "0"
          FilePath = "/System/Library/Frameworks/QuickLook.framework/Versions/A/Resources/quicklookd.app/Contents/MacOS/qlmanage">
       </PathRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1ACF88421F951EDA0065AD80"
+            BuildableName = "nblog-ql-plugin-2.qlgenerator"
+            BlueprintName = "nblog-ql-plugin-2"
+            ReferencedContainer = "container:nblog-ql-plugin-2.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-p /Users/james/Dropbox/RoboCup/MaxBallDistance1200mm/batman_tripoint_v8_id845_u4595AEA921.nblog"
