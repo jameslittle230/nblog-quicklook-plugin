@@ -146,7 +146,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh ./nblog-ql-plugin-2/install.sh";
+			shellScript = "sh ./nblog-ql-plugin/install.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -272,7 +272,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "nblog-ql-plugin-2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/nblog-ql-plugin/Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jameslittle.nblog-ql-plugin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,7 +285,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "nblog-ql-plugin-2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/nblog-ql-plugin/Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jameslittle.nblog-ql-plugin";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -93,19 +93,19 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 	
 	CGImageRef cgimage;
 	
-	if (imgLen == 153786) {
-		cgimage = CGImageCreate(320, 240, 8, 32, 320 * 4 * sizeof(uint8), CGColorSpaceCreateDeviceRGB(), bminfo, providerRef, nil, YES, kCGRenderingIntentDefault);
-	} else {
+	if (imgLen > 200000) {
 		cgimage = CGImageCreate(640, 480, 8, 32, 640 * 4 * sizeof(uint8), CGColorSpaceCreateDeviceRGB(), bminfo, providerRef, nil, YES, kCGRenderingIntentDefault);
+	} else {
+		cgimage = CGImageCreate(320, 240, 8, 32, 320 * 4 * sizeof(uint8), CGColorSpaceCreateDeviceRGB(), bminfo, providerRef, nil, YES, kCGRenderingIntentDefault);
 	}
 	
 	
-	NSString *stringToPrint = [NSString stringWithFormat:@"%d", imgLen];
-	NSFileHandle *stdout = [NSFileHandle fileHandleWithStandardOutput];
-	NSData *strData = [stringToPrint dataUsingEncoding: NSASCIIStringEncoding];
-	printf("\n");
-	[stdout writeData: strData];
-	printf("\n\n");
+//	NSString *stringToPrint = [NSString stringWithFormat:@"%d", imgLen];
+//	NSFileHandle *stdout = [NSFileHandle fileHandleWithStandardOutput];
+//	NSData *strData = [stringToPrint dataUsingEncoding: NSASCIIStringEncoding];
+//	printf("\n");
+//	[stdout writeData: strData];
+//	printf("\n\n");
 	
 	// if the context
 	if (cgContext) {
